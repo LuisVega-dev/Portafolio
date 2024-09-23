@@ -204,7 +204,7 @@ section {
 
 .biography-title {
   font-family: "Roboto", sans-serif;
-  font-size: 60px;
+  font-size: clamp(2.5rem, 3.91vw, 5rem);
   font-weight: 400;
 }
 
@@ -247,7 +247,7 @@ section {
   font-family: "Roboto", sans-serif;
 }
 .contact_text_container .contact-text {
-  font-size: 60px;
+  font-size: clamp(2.5rem, 3.91vw, 5rem);
 }
 
 .contact_text_container .contact-description {
@@ -417,7 +417,7 @@ section {
   }
 
   #check:checked ~ .navbar {
-    height: 16rem;
+    height: 19rem;
   }
 
   .name-work-container .name {
@@ -430,18 +430,114 @@ section {
     color: #fff;
   }
 
+  .name-work-container {
+    align-items: center;
+  }
+
   .name-work {
-    margin-top: 0;
+    margin: 0;
   }
 
   .skill h2 {
     margin: 0;
     text-align: center;
   }
+
+  .biography-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .form_container {
+    align-items: center;
+  }
+
+  .contact_text_container .contact-text,
+  .contact_text_container .contact-description,
+  .contact_text_container .info {
+    padding-left: 20px;
+  }
+
+  .content-form {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .form_container form {
+    width: 100%;
+  }
+
+  .form_container .container_form {
+    width: 100%;
+  }
+
+  .form_container .width .int-text {
+    width: 100%;
+  }
+
+  .width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .msg-container {
+    width: 80%;
+  }
+
+  .form_container .int-text {
+    font-size: 19px;
+  }
 }
 
 @media (width < 634px) {
   .bg_image {
     background-position-y: 0;
+  }
+
+  .skill-image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-image {
+    width: 68.5%;
+  }
+}
+
+@media (width < 422px) {
+  .biography-text {
+    width: 94%;
+  }
+
+  .biography-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .biography-title {
+    margin-left: 2.5%;
+  }
+
+  .biography-img-container {
+    width: 73vw;
+  }
+
+  .biography-img {
+    width: 100%;
+  }
+}
+
+@media (width < 466px) {
+  .span_disable {
+    width: 91%;
   }
 }
