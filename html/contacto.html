@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">LMVR</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <div class="navbar">
+            <a href="./Portafolio.html">Portafolio</a>
+            <a href="./Biografia.html">Biografia</a>
+            <a href="./contacto.html">Contacto</a>
+            <div class="redes-container">
+                <a href="https://www.facebook.com/Luis.vega.6721">
+                    <img src="../assets/img/simbolo-de-la-aplicacion-de-facebook-white.png" alt="Facebook" width="27px">
+                </a>
+                <a href="https://www.instagram.com/luisvegaedit/">
+                    <img src="../assets/img/logotipo-de-instagram-white.png" alt="Instagram" width="27px">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="contact_text_container">
+                <p class="contact-text">Contacto</p>
+                <p class="contact-description">Luis Vega es Analizador y Desarrollador de Software avalado por el Servicio Nacional de Aprendizaje (SENA).</p>
+                <div class="info">
+                    <a href="mailto:luisvega.dev@gmail.com" class="email info">luisvega.dev@gmail.com</a>
+                    <a href="tel:+573016213501" class="tel-info">+57 301 6213501</a>
+                </div>
+            </div>
+            <div class="form_container">
+                <form action="name_lastname" method="POST" id="form-contact">
+                    <div class="form_container">
+                        <form action="name_lastname" method="POST">
+                            <div class="content-form">
+                                <div class="container_form">
+                                    <label for="">Nombre</label><br>
+                                    <input id="name" name="name" required type="text" class="int-text">
+                                </div>
+                                <div class="container_form">
+                                    <label for="">Apellido</label><br>
+                                    <input id="lastname" name="lastname" required type="text" class="int-text">
+                                </div>
+                            </div>
+                            <div class="content-form">
+                                <div class="container_form">
+                                    <label for="">Email</label><br>
+                                    <input id="email" name="email" required type="text" class="int-text">
+                                </div>
+                                <div class="container_form">
+                                    <label for="">Teléfono</label>
+                                    <input type="text" name="telefono" required id="telefono" class="int-text">
+                                </div>
+                            </div>
+                            <div class="container_form width">
+                                <label for="">Déjame un mensaje...</label>
+                                <input type="text" name="msg-input" required id="msg-input" class="int-text">
+                                <div class="btn-container">
+                                    <input type="submit" value="Enviar" class="send">
+                                </div>
+                                <p class="span_disable"></p>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/form.js"></script>
+</body>
+</html>
